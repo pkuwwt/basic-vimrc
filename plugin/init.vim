@@ -1,6 +1,8 @@
 
 let mapleader = ","
 
+set fileencodings=utf-8,ucs-bom,cp936,latin1
+
 set nu
 nmap j gj
 nmap k gk
