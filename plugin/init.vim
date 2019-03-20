@@ -8,6 +8,9 @@ nmap <Leader>tn :tabnew<CR>
 nmap <Tab>      :tabn<CR>
 nmap <S-Tab>      :tabp<CR>
 
+nmap <Leader>bn :bnext<CR>
+nmap <Leader>bp :bprevious<CR>
+
 nmap <F5> :call RunCode()<CR>
 
 set hlsearch
