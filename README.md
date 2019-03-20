@@ -17,3 +17,5 @@ Plug 'pkuwwt/basic-vimrc'
 call plug#end()
 ```
 
+And then execute `:PlugInstall`.
+
