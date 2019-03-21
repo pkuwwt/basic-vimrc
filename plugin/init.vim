@@ -1,7 +1,10 @@
 
 let mapleader = ","
+set nocompatible
 
 set fileencodings=utf-8,ucs-bom,cp936,latin1
+
+set backspace=indent,eol,start
 
 set nu
 nmap j gj
