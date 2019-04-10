@@ -58,3 +58,4 @@ func! RunCode ()
 	endif
 endfunc
 
+set path=.,**
