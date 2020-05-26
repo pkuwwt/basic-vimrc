@@ -59,6 +59,9 @@ call SetupStatusLine()
 set modeline
 set modelines=1
 
+" Copy to register *. In windows and Mac, it is the system clipboard
+" For Linux, we should use vim-gtk
+vmap Y "*y
 nmap <Leader>e :e $MYVIMRC<CR>
 augroup myvimrc
 	au!

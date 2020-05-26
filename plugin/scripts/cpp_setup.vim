@@ -67,7 +67,7 @@ func! GetCompileFlag()
 		"let compileflag .= " -DvtkRenderingCore_AUTOINIT=\"2(vtkInteractionStyle,vtkRenderingOpenGL)\" -L/usr/lib64/vtk -lvtkRenderingCore -lvtkFiltersCore -lvtkRenderingVolume -lvtkChartsCore -lvtkCommonExecutionModel -lvtkCommonTransforms -lvtkFiltersSources -lvtkFiltersGeneral -lvtkCommonDataModel -lvtkCommonCore -lvtkIOImage -lvtkInteractionStyle -lvtkRenderingOpenGL "
 	endif
 	if search("osg") != 0
-		let compileflag .= " -losgDB -losgGA -losgViewer -losg -losgUtil -losgText -losgSim -losgFX -lOpenThreads  -losgAnimation -losgWidget -losgManipulator -losgTerrain "
+		let compileflag .= " -losgDB -losgGA -losgViewer -losg -losgUtil -losgText -losgSim -losgFX -lOpenThreads  -losgAnimation -losgWidget -losgManipulator -losgTerrain -losgShadow "
 	endif
 	if search("osgEarth") != 0
 		let compileflag .= " -losgEarth -losgEarthUtil -losgEarthFeatures -losgEarthSymbology "
