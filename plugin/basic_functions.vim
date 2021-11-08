@@ -174,6 +174,10 @@ function! ReloadWithUTF8()
     exec ':e! ++enc=utf-8 %'
 endfunction
 
+function! ReloadWithGBK()
+    exec ':e! ++enc=gbk %'
+endfunction
+
 function! ReloadFileEncoding()
 	if &encoding == 'utf-8' && &fileencoding == 'latin1'
 		exec ':e! ++enc=utf-8 %'

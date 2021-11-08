@@ -13,9 +13,9 @@ endfunc
 func! Execute_python(filename)
 	if &filetype=='python'
 		if exists(':term')
-			exec ':term python '.a:filename
+			exec ':term python3 '.a:filename
 		else
-			exec ':!python '.a:filename
+			exec ':!python3 '.a:filename
 		endif
 	endif
 endfunc

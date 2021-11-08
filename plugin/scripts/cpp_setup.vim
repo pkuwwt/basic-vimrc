@@ -28,6 +28,9 @@ func! GetIncludeDirs()
 	if search("Python\.h")
 		let inc .= " -I/usr/include/python2.7 "
 	endif
+	if search("opencv")
+		let inc .= " -I/usr/local/include/opencv4/ "
+	endif
 	if search("<Q")
 		let inc .= " -I/usr/include/qt4 -I/usr/include/QtCore -I/usr/include/QtGui -I/usr/include/Qt -I/usr/include/QtOpenGL "
 	endif
@@ -51,7 +54,7 @@ func! GetCompileFlag()
 		let compileflag .= " -lX11 -lXxf86vm "
 	endif
 	if search("cv\.h") != 0
-		let compileflag .= " -lcv -lhighgui -lcvaux -lcxcore "
+		let compileflag .= " -lopencv_core -lopencv_highgui -lopencv_imgcodecs -lopencv_imgproc -lopencv_ximgproc "
 	endif
 	if search("omp\.h") != 0
 		let compileflag .= " -fopenmp "
