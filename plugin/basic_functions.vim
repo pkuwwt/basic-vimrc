@@ -121,7 +121,7 @@ if has("multi_byte")
 	if getfsize(expand("%")) > 0
 		set fileencodings=ucs-bom,utf-8,chinese,gbk,gb2312,gb18030,cp936,big5,euc-jp,euc-kr,latin1
 	else
-		set fileencodings=cp936,big5,euc-jp,euc-kr,latin1
+		set fileencodings=ucs-bom,utf-8,cp936,big5,euc-jp,euc-kr,latin1
 	endif
 	" CJK environment detection and corresponding setting
 	if v:lang =~ "^zh_CN"
